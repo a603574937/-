@@ -1,0 +1,324 @@
+@charset "utf-8";
+/* CSS Document */
+
+
+/*产品展示*/
+#cpzs{
+	width: 710px;
+	height: 706px;
+	margin: 0 auto;
+	padding-top: 30px;
+}
+#cpbt{
+	height: 50px;
+	line-height: 50px;
+	padding-bottom: 20px;
+}
+#cpbt div{
+	font-size: 36px;
+	color: #333;
+	float: left;
+}
+#cpbt a{
+	float: right;
+	font-size: 26px;
+	color: #999;
+}
+#cpnr{
+	width: 710px;
+	height:636px; 
+	overflow: hidden;
+}
+#cpnr li{
+	float: left;
+	width: 348px;
+	height: 318px;
+	margin-left: 14px;
+}
+#cpnr li:nth-child(odd){
+	margin-left: 0;
+}
+#cpnr li .bk{
+	width: 346px;
+	height: 250px;
+	border: 1px solid #dbdbdb;
+}
+#cpnr li .bk div{
+	width: 338px;
+	height: 244px;
+	margin: 3px auto 0;	
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+#cpnr li .cpmc{
+	margin-top: 16px;
+	font-size: 28px;
+}
+
+/*三大理念*/
+#sdln{
+	width: 100%;
+	height: 738px;
+	background-color: #e9eef6;
+}
+#lnnr{
+	width: 710px;
+	height: 738px;
+	margin: 0 auto;
+}
+#sdln h2{
+	font-size: 36px;
+	color: #186fff;
+	text-align: center;
+	height: 124px;
+	line-height: 124px;
+}
+#sdln ul li{
+	height: 204px;
+}
+#sdln ul .zw>div{
+	float: left;
+	width: 424px;
+}
+#sdln ul .zw>img{
+	float: right;
+}
+#sdln ul .ln{
+	height: 58px;
+	padding-top: 6px;
+}
+#sdln ul .ln *{
+	float: left;
+}
+#sdln ul .ln img{
+	margin-top: 6px;
+}
+#sdln ul .ln div{
+	font-size: 30px;
+	line-height: 58px;
+	margin-left: 16px;
+}
+#sdln ul li p{
+	font-size: 22px;
+	color: #999;
+}
+#sdln ul .yw>div{
+	float: right;
+	width: 424px;
+	margin-top: -10px;
+}
+#sdln ul .yw>img{
+	float: left;
+}
+#sdln ul .yw .ln *{
+	float: right;
+} 
+#sdln ul .yw .ln div{
+	margin-right: 16px;
+}
+#sdln ul .yw p{
+	text-align: right;
+}
+
+/*成功案例*/
+#cgal{
+	width: 710px;
+	height: 520px;
+	margin: 0 auto;
+	padding-top: 30px;
+}
+#albt{
+	height: 50px;
+	line-height: 50px;
+	padding-bottom: 20px;
+}
+#albt div{
+	font-size: 36px;
+	color: #333;
+	float: left;
+}
+#albt a{
+	float: right;
+	font-size: 26px;
+	color: #999;
+}
+#alnr{
+	width: 710px;
+	height: 318px;
+	overflow: hidden;
+	position: relative;
+}
+#alche{
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+#alnr li{
+	float: left;
+	width: 348px;
+	height: 318px;
+	margin-left: 14px;
+}
+#alnr li:nth-child(1){
+	margin-left: 0;
+}
+#alnr li .bk{
+	width: 346px;
+	height: 250px;
+	border: 1px solid #dbdbdb;
+}
+#alnr li .bk div{
+	width: 338px;
+	height: 244px;
+	margin: 3px auto 0;	
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+}
+#alnr li .albt{
+	margin-top: 16px;
+	font-size: 28px;
+}
+#alan{
+	width: 108px;
+	margin: 40px auto 0;
+}
+#aljty{
+	margin-left: 18px;
+}
+
+/*新闻动态*/
+#xwdt{
+	width: 100%;
+	height: 548px;
+}
+#xwbt{
+	width: 100%;
+	height: 116px;
+	line-height: 116px;
+	font-size: 36px;
+	text-align: center;
+	color: #333;
+	background-color: #e9eef6;
+}
+#xwnr{
+	width: 710px;
+	margin: 0 auto;
+	padding: 16px 0 26px;
+	height: 264px;
+}
+#xwnr>*{
+	width: 355px;
+	float: left;
+}
+#xwnr .xwsj{
+	display: inline-block;
+	font-size: 20px;
+	color: #999;
+	line-height: 42px;
+	height: 42px;
+	border-bottom: 2px solid #186fff;
+}
+#xwnr .bt{
+	width: 316px;
+	margin-top: 20px;
+	font-size: 26px;
+	color: #333;
+	height: 62px;
+	line-height: 31px;
+	overflow: hidden;
+}
+#xwnr .xwjj{
+	width: 316px;
+	margin-top: 40px;
+	font-size: 20px;
+	color: #999;
+}
+#gdxw{
+	width: 100%;
+	height: 126px;
+	background-color: #e9eef6;
+	position: relative;
+}
+#gdxw a{
+	display: inline-block;
+	width: 280px;
+	height: 56px;
+	position: absolute;
+	top: 35px;
+	left: 50%;
+	margin-left: -140px;
+	background-color: #000;
+	font-size: 24px;
+	color: #fff;
+	line-height: 56px;
+	text-align: center;
+}
+
+/*公司简介*/
+#gsjj{
+	width: 100%;
+	height: 476px;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	background-image: url("../images/jjbg.png");
+}
+#jjnr{
+	width: 710px;
+	height: 440px;
+	padding-top: 36px;
+	margin: 0 auto;
+}
+#jjnr div{
+	font-size: 36px;
+	color: #fff;
+	margin-bottom: 44px;
+}
+#jjnr p{
+	font-size: 24px;
+	color: #fff;
+}
+#jjnr a{
+	display: inline-block;
+	width: 150px;
+	height: 56px;
+	line-height: 56px;
+	text-align: center;
+	color: #fff;
+	font-size: 24px;
+	border: 1px solid #fff;
+	margin-top: 32px;
+}
+
+/*技术支持*/
+#jszc{
+	width: 710px;
+	margin:0 auto;
+	height: 380px;
+}
+#jszc>div{
+	font-size: 36px;
+	text-align: center;
+	line-height: 120px;
+	height: 120px;
+	color: #333;
+}
+#jszc ul li{
+	height: 40px;
+	margin-top: 18px;
+}
+#jszc ul li:nth-child(1){
+	margin-top: 0;
+}
+#jszc ul li *{
+	float: left;
+}
+#jszc ul li img{
+	margin: 16px 10px 0;
+}
+#jszc ul li div{
+	font-size: 30px;
+	color: #666;
+}

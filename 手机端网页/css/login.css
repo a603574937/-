@@ -1,0 +1,34 @@
+@charset "utf-8";
+/* CSS Document */
+body{background-color: #252934;}
+.logo{width: 3rem;margin-top: 2.18rem;margin-left: 2.25rem;}
+.dlk{width: 6rem;margin: auto;margin-top: 1.38rem;}
+.yhm{width: 6rem;height: 0.88rem;position: relative;}
+.yhmimg{width: 0.42rem;position: absolute;top:0.28rem;left: 0.3rem;z-index: 10;}
+.yhm input{width: 5.96rem;height: 0.84rem;font-size: 0.34rem;border: 0.02rem solid transparent;position: absolute;top: 0;left: 0;text-indent: 1.1rem;border-radius: 0.06rem;background-color: rgba(0,0,0,0.2);color: #999;}
+.yhm input:focus{border-color: #ffbe33;}
+.yhm .cwtx{position: absolute;left: 0;bottom: -0.4rem;height: 0.4rem;}
+.yhm .cwtx img{float: left;height: 0.24rem;margin-top: 0.08rem;}
+.yhm .cwtx span{float: left;line-height: 0.4rem;color: #fe260f;font-size: 0.24rem;margin-left: 0.1rem;}
+.pwd{width: 6rem;height: 0.88rem;position: relative;margin-top: 0.4rem;}
+.pwdimg{width: 0.36rem;position: absolute;top:0.23rem;left: 0.33rem;z-index: 10;}
+.pwd input{width: 5.96rem;height: 0.84rem;font-size: 0.34rem;border: 0.02rem solid transparent;position: absolute;top: 0;left: 0;text-indent: 1.1rem;border-radius: 0.06rem;background-color: rgba(0,0,0,0.2);color: #999;}
+.pwd input:focus{border-color: #ffbe33;}
+.dl{margin-top: 0.6rem;width: 6rem;height: 0.88rem;border: none;border-radius: 0.44rem;background-color: #ffbe33;color: #fff;font-size: 0.42rem;}
+.yhm input::-webkit-input-placeholder,.pwd input::-webkit-input-placeholder{
+    color: #999;
+    }
+.yhm input:-moz-placeholder,.pwd input:-moz-placeholder{
+    color: #999;
+    }
+.yhm input::-moz-placeholder,.pwd input::-moz-placeholder{
+    color: #999;
+    }
+.yhm input:-ms-input-placeholder,.pwd input:-ms-input-placeholder{
+    color: #999;
+}
+
+
+.wjmm{font-size: 0.24rem;text-align: center;margin-top: 0.54rem;color: #999;opacity: 0.5;line-height: 0.26rem;height: 0.26rem;}
+.hx{width: 6rem;height: 0.02rem;background-color: #fff;opacity: 0.1;margin: auto;margin-top: 1.54rem;}
+.zc{font-size: 0.24rem;text-align: center;color: #999;margin-top: 0.54rem;opacity: 0.5;line-height: 0.26rem;height: 0.26rem;margin-bottom: 0.54rem;}

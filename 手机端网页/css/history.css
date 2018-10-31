@@ -1,0 +1,21 @@
+@charset "utf-8";
+/* CSS Document */
+body{background-color: #252934;}
+nav{height: 0.36rem;line-height: 0.36rem;font-size: 0.36rem;margin-top: 0.64rem;position: relative;text-align: center;color: #fff;}
+nav img{position: absolute;top: 0;left: 0.24rem;height: 0.36rem;}
+
+.bd{margin-top: 0.2rem;height: 0.68rem;border-bottom: 0.02rem solid rgba(255,255,255,0.1);background-color: #1e212a;}
+.bd li{float: left;width: 50%;}
+.bd li div{margin: auto;width: 1.4rem;height: 0.46rem;line-height: 0.46rem;margin-top: 0.18rem;text-align: center;font-size: 0.26rem;color:#67686b;}
+.bd li.on div{border-bottom: 0.04rem solid #ffbe33;color: #ffbe33;}
+
+.czlb li{height: 1.14rem;padding: 0 0.24rem;}
+.czlb li:nth-child(odd){background-color: #1e212a;}
+.czlb .czxx{float: left;margin-top: 0.26rem;}
+.czxx .slbz{height: 0.34rem;}
+.czxx .slbz div{float: left;color: #fff;font-size: 0.28rem;line-height: 0.28rem;}
+.czxx .slbz .sl{margin-left: 0.68rem;}
+.czxx .sj{font-size: 0.22rem;color: rgba(255,255,255,0.5);width: 3rem;line-height: 0.22rem;}
+.czlb .zt{float: right;margin-top: 0.42rem;font-size: 0.26rem;color: rgba(255,255,255,0.5);}
+
+.mygd{height: 0.24rem;line-height: 0.24rem;margin-top: 0.46rem;font-size: 0.22rem;color: rgba(255,255,255,0.5);text-align: center;}

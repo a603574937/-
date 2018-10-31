@@ -1,0 +1,39 @@
+@charset "utf-8";
+/* CSS Document */
+body{background-color: #252934;padding-bottom: 0.98rem;}
+nav{height: 0.36rem;line-height: 0.36rem;font-size: 0.36rem;margin-top: 0.64rem;position: relative;text-align: center;color: #fff;}
+nav .lsjl{position: absolute;right: 0.24rem;font-size: 0.3rem;color: rgba(153,153,153,0.5);top: 0;}
+
+.tb{height: 2.2rem;padding: 0 0.24rem;background-color: #1e212a;margin-top: 0.24rem;}
+.tb .gn{height: 0.86rem;border-bottom: 0.02rem solid #252934;}
+.tb .gn .bt{font-size: 0.34rem;float: left;color: #ffcc00;line-height: 0.86rem;}
+.tb .gn .cz,.tb .gn .tx{float: right;}
+.tb .gn .cz{margin-right: 0.5rem;}
+.tb .gn .cz img,.tb .gn .tx img{width: 0.3rem;float: left;margin-top: 0.28rem;}
+.tb .gn .cz div,.tb .gn .tx div{font-size: 0.22rem;color: #67686b;float: left;line-height: 0.86rem;margin-left: 0.1rem;}
+
+.gz .gzbt{margin-top: 0.26rem;height: 0.4rem;}
+.gz .gzbt div{float: left;color: rgba(153,153,153,0.5);font-size: 0.26rem;}
+.gz .gzbt img{float: left;width: 0.4rem;margin-top: 0.04rem;margin-left: 0.16rem;}
+.gz .gzsl{margin-top: 0.1rem;}
+.gz .gzsl .btc{float: left;font-size: 0.36rem;color: #fff;line-height: 0.36rem;}
+.gz .gzsl .rmb{float: left;font-size: 0.26rem;color: rgba(153,153,153,0.5);line-height: 0.36rem;margin-left: 0.2rem;}
+
+.coinlb{margin-top: 0.26rem;}
+.coinlb li{height: 0.88rem;line-height: 0.88rem;}
+.coinlb li:nth-child(odd){background-color: #1e212a;}
+.coinlb li *{float: left;}
+.coinlb li img{width: 0.44rem;margin-top: 0.22rem;margin-left: 0.24rem;}
+.coinlb li .jc{font-size: 0.28rem;line-height: 0.88rem;color: #fff;margin-left: 0.2rem;}
+.coinlb li .qc{font-size: 0.24rem;color: rgba(153,153,153,0.5);line-height: 0.88rem;margin-left: 0.2rem;}
+.coinlb li .sl{float: right;font-size: 0.28rem;color: #fff;line-height: 0.88rem;margin-right: 0.24rem;}
+
+.bottom{position:fixed;height:0.98rem;width:100%;background:#1e212a;z-index:9999;bottom:0;left:0;overflow:hidden;}
+.bottom ul li{float:left;width:20%;text-align:center;line-height:1.0;}
+.bottom ul li a{display:block;width:100%;height:100%;overflow: hidden;}
+.bottom ul li img{display: block;height:0.48rem;margin-top: 0.12rem;margin-left: 0.5rem;}
+.bottom ul li .xz{display:none;}
+.bottom ul li div{font-size:0.2rem;color:#999;line-height: 0.36rem;}
+.bottom ul li.on .bz{display:none;}
+.bottom ul li.on .xz{display:block;}
+.bottom ul li.on div{color:#ffbe33;}

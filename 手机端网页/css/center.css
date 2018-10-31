@@ -1,0 +1,36 @@
+@charset "utf-8";
+/* CSS Document */
+body{background-color: #252934;padding-bottom: 0.98rem;}
+.grxx{width: 100%;height: 1.7rem;padding-top: 0.9rem;background-image: url(../images/grbg.png);background-size: cover;}
+.grxx .tx{float: left;width: 1.18rem;height: 1.18rem;border: 0.02rem solid #666;border-radius: 0.6rem;margin-left: 0.24rem;}
+.grxx .tx img{width: 1.19rem;}
+.grxx .xxnr{float: left;margin-left: 0.4rem;}
+.grxx .xxnr .yhm{font-size: 0.28rem;color: #999;margin-top: 0.26rem;}
+.grxx .xxnr .djsf{margin-top: 0.2rem;}
+.grxx .xxnr .dj{float: left;border: 0.02rem solid #ffbe33;width: 1.06rem;height: 0.4rem;border-radius: 0.1rem;}
+.grxx .xxnr .dj img{float: left;width: 0.26rem;margin-top: 0.1rem;margin-left: 0.16rem;}
+.grxx .xxnr .dj span{float: left;font-size: 0.22rem;color: #ffbe33;line-height: 0.4rem;margin-left: 0.12rem;}
+.grxx .xxnr .sfrz{float: left;margin-left: 0.1rem;border: 0.02rem solid #666;width: 1.46rem;height: 0.4rem;border-radius: 0.1rem;color: #999;font-size: 0.22rem;text-align: center;line-height: 0.4rem;}
+.grxx .sz{float: right;width: 0.3rem;margin-right: 0.34rem;margin-top: 0.26rem;}
+
+.jg{width: 100%;height: 1rem;line-height: 1rem;font-size: 0.2rem;text-align: center;color: #999;}
+
+.xx{width: 100%;height: 0.86rem;line-height: 0.86rem;font-size: 0.34rem;color: #999;background-color: rgba(0,0,0,0.2);}
+.xx a{display: inline-block;width: 100%;height: 100%;text-indent: 0.24rem;}
+.xx a div{width: 7rem;margin: auto;height: 0.85rem;}
+.xx a .bb{border-top: 0.01rem solid #252934;}
+.xx .you{float: right;height: 0.22rem;margin-top: 0.32rem;margin-right: 0.24rem;}
+.xx .tb{float: left;width: 0.36rem;margin-top: 0.24rem;}
+.xx .gb{float: right;font-size: 0.22rem;margin-right: 0.24rem;}
+
+.gyz{margin-top: 0.44rem;}
+
+.bottom{position:fixed;height:0.98rem;width:100%;background:#1e212a;z-index:9999;bottom:0;left:0;overflow:hidden;}
+.bottom ul li{float:left;width:20%;text-align:center;line-height:1.0;}
+.bottom ul li a{display:block;width:100%;height:100%;overflow: hidden;}
+.bottom ul li img{display: block;height:0.48rem;margin-top: 0.12rem;margin-left: 0.5rem;}
+.bottom ul li .xz{display:none;}
+.bottom ul li div{font-size:0.2rem;color:#999;line-height: 0.36rem;}
+.bottom ul li.on .bz{display:none;}
+.bottom ul li.on .xz{display:block;}
+.bottom ul li.on div{color:#ffbe33;}

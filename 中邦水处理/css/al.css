@@ -1,0 +1,27 @@
+@charset "utf-8";
+/* CSS Document */
+*{padding:0;margin:0;text-decoration:none;list-style:none;font-family: "微软雅黑";}
+img{border:none;}
+a:hover{
+	text-decoration:none;
+}
+
+
+/*案例*/
+#al{
+	width: 710px;
+	margin: 0 auto;
+	padding-bottom: 30px;
+}
+#al h1{
+	font-size: 36px;
+	color: #333;
+	text-align: center;
+	font-weight: normal;
+	margin-top: 26px;
+	margin-bottom:34px;
+}
+#al p{
+	font-size: 28px;
+	color: #666;
+}

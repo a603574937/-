@@ -1,0 +1,23 @@
+@charset "utf-8";
+/* CSS Document */
+@font-face{
+  font-family: 'pingFangSC-Regular';
+  src: url('../fonts/PingFangSC-Regular.otf');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face{
+  font-family: 'SF-UI-Text-Regular';
+  src: url('../fonts/SF-UI-Text-Regular.otf');
+  font-weight: normal;
+  font-style: normal;
+}
+*{padding:0;margin:0;text-decoration:none;list-style:none;font-family: "pingFangSC-Regular";outline: none;}
+img{border:none;}
+a:hover{
+	text-decoration:none;
+}
+table{border-collapse:collapse;border-spacing:0;}
+
+html{font-size:13.33333333vw}
+input,button{-webkit-appearance:none;}

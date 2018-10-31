@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="zh-cn">
+	<head>
+		<meta charset="UTF-8">  <!--页面编码-->
+		<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">  <!--IE渲染 如果IE8以下模拟高速浏览器渲染  chrome=1开启谷歌浏览器高速渲染-->
+		<meta name="renderer" content="Webkit">  <!--高速模式-->
+		<meta name="format-detection" content="telephone=no,email=no,address=no">
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+		<title>充值详情页</title>
+		<!--公共css文件-->
+		<link rel="stylesheet" href="css/public.css">
+		<!--自定义样式文件-->
+		<link rel="stylesheet" href="css/history.css">
+		<!--Jquery脚本文件-->
+		<script src="script/jquery-3.1.0.min.js"></script>
+		<!--自定义js文件
+		<script src="script/index.js"></script>-->
+	</head>
+	
+	<body>
+		<nav><img src="images/fh.png">充值详情页</nav>
+		<ul class="bd bd1">
+			<li class="on">
+				<div>
+					<span>充值记录</span>
+				</div>
+			</li>
+			<li>
+				<div>
+					<span>提现记录</span>
+				</div>
+			</li>
+		</ul>
+		<ul class="czlb">
+			<li>
+				<div class="czxx">
+					<div class="slbz">
+						<div>EOS</div>
+						<div class="sl">1.5</div>
+					</div>
+					<div class="sj">2018-04-26  14:46:50</div>
+				</div>
+				<div class="zt">成功</div>
+			</li>
+			<li>
+				<div class="czxx">
+					<div class="slbz">
+						<div>EOS</div>
+						<div class="sl">1.5</div>
+					</div>
+					<div class="sj">2018-04-26  14:46:50</div>
+				</div>
+				<div class="zt">成功</div>
+			</li>
+			<li>
+				<div class="czxx">
+					<div class="slbz">
+						<div>EOS</div>
+						<div class="sl">1.5</div>
+					</div>
+					<div class="sj">2018-04-26  14:46:50</div>
+				</div>
+				<div class="zt">成功</div>
+			</li>
+		</ul>
+		<div class="mygd">没有更多了</div>
+	</body>
+	<script type="text/javascript">
+		$(function(){
+			$(".bd1 li").click(function(){
+				$(".bd1 li").removeClass("on");
+				this.classList.add("on");
+			});
+		})
+	</script>
+</html>

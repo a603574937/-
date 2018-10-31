@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="zh-cn">
+	<head>
+		<meta charset="UTF-8">  <!--页面编码-->
+		<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">  <!--IE渲染 如果IE8以下模拟高速浏览器渲染  chrome=1开启谷歌浏览器高速渲染-->
+		<meta name="renderer" content="Webkit">  <!--高速模式-->
+		<meta name="format-detection" content="telephone=no,email=no,address=no">
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+		<title>市场</title>
+		<!--公共css文件-->
+		<link rel="stylesheet" href="css/public.css">
+		<!--自定义样式文件-->
+		<link rel="stylesheet" href="css/marketing.css">
+		<!--Jquery脚本文件-->
+		<script src="script/jquery-3.1.0.min.js"></script>
+		<!--自定义js文件
+		<script src="script/index.js"></script>-->
+	</head>
+	
+	<body>
+		<nav><img class="fh" src="images/fh.png">ANG/BNB<img class="xia" src="images/xia.png"><img class="xing" src="images/xing.png"></nav>
+		<div class="gzxx">
+			<div class="xx">
+				<div class="jg lv">0.00222837↑<span>¥0.79</span></div>
+				<div class="fd lv">+0.1012<span>+8.35%</span></div>
+				<div class="cjl">成交量 32,417.04 BNB</div>
+			</div>
+			<div class="gd">
+				<div>最低<span>0.00222834</span></div>
+				<div>最高<span>0.00222976</span></div>
+			</div>
+		</div>
+		<ul class="bd bd1">
+			<li class="on">
+				<div>
+					<span>分时</span>
+				</div>
+			</li>
+			<li>
+				<div>
+					<span>深度</span>
+				</div>
+			</li>
+		</ul>
+		<div class="tb"></div>
+		<ul class="bd bd2">
+			<li class="on">
+				<div >
+					<span>委托订单</span>
+				</div>
+			</li>
+			<li>
+				<div>
+					<span>最新成交</span>
+				</div>
+			</li>
+		</ul>
+		<div class="jyxx">
+			<table class="jylb">
+				<tbody>
+					<tr>
+						<th width="50%">买</th>
+						<th width="50%">卖<span>4</span></th>
+					</tr>
+					<tr>
+						<td>1620<span class="mrj">0.00015764</span><div class="mrjd" style="width: 20%"><!--卖出数量除以总数--></div></td>
+						<td><span class="mcj">0.00015768</span><span class="sl">37057</span><div class="mcjd" style="width: 20%"><!--卖出数量除以总数--></div></td>
+					</tr>
+					<tr>
+						<td>907<span class="mrj">0.00015764</span><div class="mrjd" style="width: 40%"></div></td>
+						<td><span class="mcj">0.00015768</span><span class="sl">5509</span><div class="mcjd" style="width: 50%"></div></td>
+					</tr>
+					<tr>
+						<td>874<span class="mrj">0.00015764</span><div class="mrjd" style="width: 30%"></div></td>
+						<td><span class="mcj">0.00015768</span><span class="sl">8186</span><div class="mcjd" style="width: 70%"></div></td>
+					</tr>
+					<tr>
+						<td>226<span class="mrj">0.00015764</span><div class="mrjd" style="width: 10%"></div></td>
+						<td><span class="mcj">0.00015768</span><span class="sl">251748</span><div class="mcjd" style="width: 80%"></div></td>
+					</tr>
+					<tr>
+						<td>74215<span class="mrj">0.00015764</span><div class="mrjd" style="width: 90%"></div></td>
+						<td><span class="mcj">0.00015768</span><span class="sl">69722</span><div class="mcjd" style="width: 5%"></div></td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+		<div class="an">
+			<div class="mran">
+				<button>买入</button>>
+			</div>
+			<div class="mcan">
+				<button>卖出</button>
+			</div>
+		</div>
+	</body>
+	<script type="text/javascript">
+		$(function(){
+			$(".bd1 li").click(function(){
+				$(".bd1 li").removeClass("on");
+				this.classList.add("on");
+			});
+			$(".bd2 li").click(function(){
+				$(".bd2 li").removeClass("on");
+				this.classList.add("on");
+			});
+		})
+	</script>
+</html>

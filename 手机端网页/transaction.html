@@ -1,0 +1,233 @@
+<!doctype html>
+<html lang="zh-cn">
+	<head>
+		<meta charset="UTF-8">  <!--页面编码-->
+		<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">  <!--IE渲染 如果IE8以下模拟高速浏览器渲染  chrome=1开启谷歌浏览器高速渲染-->
+		<meta name="renderer" content="Webkit">  <!--高速模式-->
+		<meta name="format-detection" content="telephone=no,email=no,address=no">
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+		<title>交易</title>
+		<!--公共css文件-->
+		<link rel="stylesheet" href="css/public.css">
+		<!--自定义样式文件-->
+		<link rel="stylesheet" href="css/transaction.css">
+		<!--Jquery脚本文件-->
+		<script src="script/jquery-3.1.0.min.js"></script>
+		<!--自定义js文件
+		<script src="script/index.js"></script>-->
+	</head>
+	
+	<body>
+		<nav><img class="zxjy" src="images/zxjy.png">ANG/BNB<img class="xia" src="images/xia.png"><div class="lswt">历史委托</div></nav>
+
+		<ul class="bd bd1">
+			<li class="on">
+				<div>
+					<span>买入</span>
+				</div>
+			</li>
+			<li>
+				<div>
+					<span>卖出</span>
+				</div>
+			</li>
+			<li class="dqwt">
+				<div>
+					<span class="wttb"></span>
+					<span>当前委托</span>
+				</div>
+			</li>
+		</ul>
+
+		<div class="xbt">
+			<div class="xjd">
+				<div>限价单</div>
+				<img src="images/xia.png">
+			</div>
+			<div class="jgsl">
+				<div>价格(BNB)</div>
+				<div>数量(AGI)</div>
+			</div>
+		</div>
+
+		<div class="gzxx">
+			<div>
+				<input type="" name="" readonly="readonly" value="0.000281478" class="jg">
+				<div class="gz">估值 ￥0.16</div>
+				<input type="" name="" class="shuliang" placeholder="数量(AGI)">
+				<div class="bl">
+					<input type="button" name="" value="25%">
+					<input type="button" name="" value="50%">
+					<input type="button" name="" value="75%" class="on">
+					<input type="button" name="" value="100%">
+				</div>
+				<input type="" name="" class="ze" placeholder="总额(BTC)">
+				<div class="ky">
+					<div>可用</div>
+					<div class="kyz">0.00125804 BTC</div>
+				</div>
+				<input type="button" name="" value="买入" class="mr">
+				<div class="jyqk">
+					<div class="tp"></div>
+					<div class="qq">
+						<div>0.18653</div>
+						<div>0.18853</div>
+					</div>
+				</div>
+			</div>
+			<div class="jynr">
+				<div class="sell">
+					<table class="jylb">
+						<tbody>
+							<tr>
+								<td><span class="mcj">0.00015768</span><span class="sl">37057</span><div class="mcjd" style="width: 20%"><!--卖出数量除以总数--></div></td>
+							</tr>
+							<tr>
+								<td><span class="mcj">0.00015768</span><span class="sl">5509</span><div class="mcjd" style="width: 50%"></div></td>
+							</tr>
+							<tr>
+								<td><span class="mcj">0.00015768</span><span class="sl">8186</span><div class="mcjd" style="width: 70%"></div></td>
+							</tr>
+							<tr>
+								<td><span class="mcj">0.00015768</span><span class="sl">251748</span><div class="mcjd" style="width: 80%"></div></td>
+							</tr>
+							<tr>
+								<td><span class="mcj">0.00015768</span><span class="sl">69722</span><div class="mcjd" style="width: 5%"></div></td>
+							</tr>
+							<tr>
+								<td><span class="mcj">0.00015768</span><span class="sl">69722</span><div class="mcjd" style="width: 5%"></div></td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+				<div class="rmb">0.00000388 <font>¥0.16</font></div>
+				<div class="buy">
+					<table class="jylb">
+						<tbody>
+							<tr>
+								<td><span class="sl">1620</span><span class="mrj">0.00015764</span><div class="mrjd" style="width: 20%"><!--卖出数量除以总数--></div></td>
+							</tr>
+							<tr>
+								<td><span class="sl">907</span><span class="mrj">0.00015764</span><div class="mrjd" style="width: 40%"></div></td>
+							</tr>
+							<tr>
+								<td><span class="sl">874</span><span class="mrj">0.00015764</span><div class="mrjd" style="width: 30%"></div></td>
+							</tr>
+							<tr>
+								<td><span class="sl">226</span><span class="mrj">0.00015764</span><div class="mrjd" style="width: 10%"></div></td>
+							</tr>
+							<tr>
+								<td><span class="sl">74215</span><span class="mrj">0.00015764</span><div class="mrjd" style="width: 90%"></div></td>
+							</tr>
+							<tr>
+								<td><span class="sl">74215</span><span class="mrj">0.00015764</span><div class="mrjd" style="width: 90%"></div></td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+				<div class="xxk">
+					<div class="ws">
+						<div>八位小数</div>
+						<img src="images/xia.png">
+					</div>
+					<div class="ms">
+						<div>默认</div>
+						<img src="images/xia.png">
+					</div>
+				</div>
+			</div>
+		</div>		
+
+
+		
+
+		<div class="wtlb">
+			<div class="xjd">
+				<div>最新成交</div>
+				<img src="images/sjt.png">
+			</div>
+			<table>
+				<tbody>
+					<tr>
+						<th width="25%" class="sj">时间</th>
+						<th width="50%" class="jg">价格</th>
+						<th width="25%" class="sl">数量</th>
+					</tr>
+					<tr>
+						<td class="sj">15:27:40</td>
+						<td class="jg lv">0.00015783</td>
+						<td class="sl">4123</td>
+					</tr>
+					<tr>
+						<td class="sj">15:27:40</td>
+						<td class="jg lv">0.00015783</td>
+						<td class="sl">4123</td>
+					</tr>
+					<tr>
+						<td class="sj">15:27:40</td>
+						<td class="jg hong">0.00015783</td>
+						<td class="sl">412233</td>
+					</tr>
+					<tr>
+						<td class="sj">15:27:40</td>
+						<td class="jg lv">0.00015783</td>
+						<td class="sl">401</td>
+					</tr>
+					<tr>
+						<td class="sj">15:27:40</td>
+						<td class="jg hong">0.00015783</td>
+						<td class="sl">412113</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+
+		<div class="bottom">
+			<ul>
+				<li>
+					<a>
+						<img class="bz" src="images/sy.png">
+						<img class="xz" src="images/syz.png">
+						<div>首页</div>
+					</a>
+				</li>
+				<li>
+					<a>
+						<img class="bz" src="images/sc.png">
+						<img class="xz" src="images/scz.png">
+						<div>市场</div>
+					</a>
+				</li>
+				<li class="on">
+					<a>
+						<img class="bz" src="images/jy.png">
+						<img class="xz" src="images/jyz.png">
+						<div>交易</div>
+					</a>
+				</li>
+				<li>
+					<a>
+						<img class="bz" src="images/zj.png">
+						<img class="xz" src="images/zjz.png">
+						<div>资金</div>
+					</a>
+				</li>
+				<li>
+					<a>
+						<img class="bz" src="images/wd.png">
+						<img class="xz" src="images/wdz.png">
+						<div>我的</div>
+					</a>
+				</li>
+			</ul>
+		</div>
+	</body>
+	<script type="text/javascript">
+		$(function(){
+			$(".bd1 li").click(function(){
+				$(".bd1 li").removeClass("on");
+				this.classList.add("on");
+			});
+		})
+	</script>
+</html>

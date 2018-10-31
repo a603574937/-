@@ -1,0 +1,73 @@
+@charset "utf-8";
+/* CSS Document */
+
+
+
+/*新闻列表*/
+#xwlb{
+	width: 100%;
+	background-color: #e9eef6;
+	padding-bottom: 40px;
+}
+#lb{
+	width: 710px;
+	margin: 0 auto;
+	overflow: hidden;
+}
+#lb li{
+	background-color: #fff;
+	width: 670px;
+	height: 160px;
+	padding: 20px;
+	margin-top: 14px;
+}
+#lb .xwsj{
+	display: inline-block;
+	font-size: 20px;
+	color: #999;
+	line-height: 42px;
+	height: 42px;
+	border-bottom: 2px solid #186fff;
+}
+#lb .bt{
+	margin-top: 20px;
+	font-size: 26px;
+	color: #333;
+	line-height: 31px;
+	height: 31px;
+	overflow: hidden;
+}
+#lb .xwjj{
+	margin-top: 10px;
+	font-size: 20px;
+	color: #999;
+	height: 60px;
+	overflow: hidden;
+}
+#ym{
+	height: 36px;
+	display: inline-block;
+	position: relative;
+	top:20px;
+	left: 50%;
+}
+#ym li{
+	float: left;
+	line-height: 34px;
+	height: 34px;
+	width: 34px;
+	color: #ccc;
+	font-size: 20px;
+	text-align: center;
+	border: 1px solid #dbdbdb;
+	border-left: none;
+}
+#ym .dq{
+	color: #fff;
+	background-color: #186fff;
+	border: 1px solid #186fff;
+	border-left: none;
+}
+#ym li:nth-child(1){
+	border-left: 1px solid #dbdbdb;
+}

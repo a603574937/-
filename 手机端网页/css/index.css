@@ -1,0 +1,72 @@
+@charset "utf-8";
+/* CSS Document */
+body{background-color: #252934;padding-bottom: 0.98rem;}
+.grxx{width: 100%;height: 3.6rem;overflow: hidden;position: relative;}
+.che{height: 3.6rem;position:absolute;top:0;left:0;}
+.che img{width: 7.5rem;height:3.6rem;float:left;}
+.bbz{height: 0.06rem;position: absolute;bottom: 0.2rem;left: 50%;}
+.bbz li{float: left;width: 0.15rem;height: 0.15rem;margin-left: 0.1rem;background-color: #fff;border-radius: 0.75rem;}
+.bbz li:nth-child(1){margin-left: 0;}
+.bbz .xz{background-color: #ffbe33;}
+.ssk{position: absolute;top: 0.62rem;right: 0.24rem;background-color: rgba(255,255,255,0.16);background-image: url("../images/ss.png");background-position: center;background-repeat: no-repeat;width: 0.44rem;height: 0.44rem;border-radius: 0.22rem;background-size: 0.24rem 0.24rem;}
+
+
+.bxx{width: 100%;height: 1rem;padding: 0.34rem 0;overflow: hidden;position: relative;background-color: #1e212a;}
+.bche{height: 1rem;position: absolute;left: 0;top: 0.34rem;}
+.bche li{float: left;width: 2.49rem;height: 1rem;border-right: 0.02rem solid #252934;}
+.bche li:nth-child(3n+0){border-right: none;}
+.bche li .bname{font-size: 0.24rem;text-align: center;color: #999;line-height: 0.32rem;}
+.bche li .bjg{font-size: 0.34rem;text-align: center;color: #fff;line-height: 0.42rem;}
+.bche li .bfd{font-size: 0.26rem;text-align: center;line-height: 0.26rem;}
+.bche li .hong{color: #ff260f;}
+.bche li .lv{color: #2ea300;}
+.bbb{height: 0.06rem;position: absolute;bottom: 0.1rem;left: 50%;}
+.bbb li{float: left;width: 0.12rem;height: 0.12rem;margin-left: 0.1rem;background-color: #fff;border-radius: 0.6rem;}
+.bbb li:nth-child(1){margin-left: 0;}
+.bbb .xz{background-color: #ffbe33;}
+
+
+.xw{width: 100%;height: 0.88rem;border-top: 0.02rem solid #252934;background-color: #1e212a;position: relative;overflow: hidden;}
+.xwche{position: absolute;top: 0;left: 0;width: 100%;}
+.xwche li{height: 0.88rem;width: 100%;height: 0.88rem;}
+.xwche li a{display: block;width: 100%;height: 100%;text-indent: 0.24rem;}
+.xwche li .tb{float: left;width: 0.36rem;margin-top: 0.24rem;margin-left: 0.24rem;}
+.xwche li a span{float: left;color:#636467;font-size: 0.26rem;line-height: 0.88rem;}
+
+
+.bd{margin-top: 0.2rem;height: 0.68rem;border-bottom: 0.02rem solid rgba(255,255,255,0.1);background-color: #1e212a;}
+.bd li{float: left;width: 50%;}
+.bd li div{margin: auto;width: 1.4rem;height: 0.46rem;line-height: 0.46rem;margin-top: 0.18rem;}
+.bd li.on div{border-bottom: 0.04rem solid #ffbe33;}
+.bd li div.zfb div{width: 0.24rem;height: 0.24rem;float: left;margin-top: 0.06rem;margin-left: 0.14rem;background-image: url(../images/zfb.png);background-size: cover;}
+.bd li.on div.zfb div{background-image: url(../images/zfbz.png);}
+.bd li div.dfb div{width: 0.24rem;height: 0.24rem;float: left;margin-top: 0.06rem;margin-left: 0.14rem;background-image: url(../images/dfb.png);background-size: cover;}
+.bd li.on div.dfb div{background-image: url(../images/dfbz.png);}
+.bd li div span{float: left;font-size: 0.26rem;color:#67686b;text-indent: 0.1rem;}
+.bd li.on div span{color: #ffbe33;}
+
+.zfb{padding: 0 0.24rem;background-color: #1e212a;}
+.bdxq{width: 100%;}
+.bdxq tbody tr{border-bottom: 0.02rem solid #252934;height: 0.88rem;}
+.bdxq tbody tr:nth-child(1){background-color: #22252f;height: 0.6rem;line-height: 0.6rem}
+.bdxq tbody tr th{color: #67686b;font-size: 0.22rem;text-align: left;}
+.bdxq tbody tr td{height: 0.88rem;line-height: 0.88rem;}
+.bdxq tbody tr .mc{color: #fff;font-size: 0.3rem;}
+.bdxq tbody tr .mc .bm{color: #999;font-size: 0.24rem;}
+.bdxq tbody tr .jg{color: #fff;font-size: 0.3rem;}
+.bdxq tbody tr .jg.lv{color: #2ea300;}
+.bdxq tbody tr .jg.hong{color: #ff260f;}
+.bdxq tbody tr .fd{color: #fff;font-size: 0.3rem;}
+.bdxq tbody tr .fd .zf{display: block;width: 1.5rem;height: 0.5rem;background-color: #2ea300;border-radius: 6px;line-height: 0.5rem;text-align: center;}
+
+.gd{color: #999;font-size: 0.24rem;background-color: #252934;text-align: center;height: 1rem;line-height: 1rem;}
+
+.bottom{position:fixed;height:0.98rem;width:100%;background:#1e212a;z-index:9999;bottom:0;left:0;overflow:hidden;}
+.bottom ul li{float:left;width:20%;text-align:center;line-height:1.0;}
+.bottom ul li a{display:block;width:100%;height:100%;overflow: hidden;}
+.bottom ul li img{display: block;height:0.48rem;margin-top: 0.12rem;margin-left: 0.5rem;}
+.bottom ul li .xz{display:none;}
+.bottom ul li div{font-size:0.2rem;color:#999;line-height: 0.36rem;}
+.bottom ul li.on .bz{display:none;}
+.bottom ul li.on .xz{display:block;}
+.bottom ul li.on div{color:#ffbe33;}

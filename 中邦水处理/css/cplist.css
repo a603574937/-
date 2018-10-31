@@ -1,0 +1,85 @@
+@charset "utf-8";
+/* CSS Document */
+
+
+
+/*新闻列表*/
+#dl{
+	width: 100%;
+	height: 69px;
+	background-color: #e9eef6;
+	border-bottom: 1px solid #e6e6e6;
+}
+#dl div{
+	width: 710px;
+	height: 70px;
+	margin: 0 auto;
+	overflow: hidden;
+}
+#dl ul li{
+	float: left;
+	width: 180px;
+	text-align: center;
+	height: 68px;
+	line-height: 68px;
+	font-size: 30px;
+	color: #333;
+	margin-left: 30px;
+}
+#dl ul li:nth-child(1){
+	margin-left: 0;
+}
+#dl ul .xz{
+	border-bottom: 2px solid #186fff;
+}
+#cplb{
+	width: 710px;
+	margin: 0 auto;
+}
+#xl{
+	width: 710px;
+	padding: 30px 0;
+	border-bottom: 1px solid #dbdbdb;
+}
+#xl li{
+	float: left;
+	font-size: 26px;
+	color: #666;
+	border-radius: 24px;
+	line-height: 48px;
+	height: 48px;
+	padding: 0 20px;
+}
+#xl .xz{
+	background-color: #186fff;
+	color: #fff;
+}
+#cp{
+	width: 710px;
+	height:636px; 
+	overflow: hidden;
+	padding-bottom: 20px;
+}
+#cp li{
+	float: left;
+	width: 348px;
+	height: 318px;
+	margin-left: 14px;
+}
+#cp li:nth-child(odd){
+	margin-left: 0;
+}
+#cp li .bk{
+	width: 346px;
+	height: 250px;
+	border: 1px solid #dbdbdb;
+}
+#cp li .bk div{
+	width: 338px;
+	height: 244px;
+	margin: 3px auto 0;	
+}
+#cp li .cpmc{
+	margin-top: 16px;
+	font-size: 28px;
+}

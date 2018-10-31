@@ -1,0 +1,43 @@
+@charset "utf-8";
+/* CSS Document */
+
+
+/*产品详情*/
+#cpxq{
+	width: 710px;
+	margin: 0 auto;
+	padding: 30px 0;
+}
+#cpxq .bk{
+	width: 346px;
+	height: 250px;
+	border: 1px solid #dbdbdb;
+	margin: 0 auto;
+}
+#cpxq .bk div{
+	width: 338px;
+	height: 244px;
+	margin: 3px auto 0;	
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+}
+#cpxq h1{
+	text-align: center;
+	font-weight: normal;
+	margin-bottom: 30px;
+	font-size: 36px;
+	color: #333;
+}
+#cpxq h2{
+	font-weight: normal;
+	font-size: 32px;
+	color: #666;
+	margin-top: 6px;
+	margin-bottom: 14px;
+}
+#cpxq p{
+	font-size: 28px;
+	color: #666;
+	line-height: 48px;
+}

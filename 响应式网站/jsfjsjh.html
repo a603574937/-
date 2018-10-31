@@ -1,0 +1,661 @@
+	<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>健身房健身计划-健身教练</title>
+<link href="css/jsfjsjh.css" rel="stylesheet" type="text/css">
+<link rel="icon" href="images/ico.png" type="image/x-icon">
+<script src="js/jquery-3.1.0.min.js"></script>
+<script>
+$(function(){
+	<!--返回顶部-->
+	$(".fhdb").hide();
+	$(window).scroll(function(){
+        var y = $(this).scrollTop();
+        if(y>"0"){
+			$(".fhdb").show();}
+			else{
+				$(".fhdb").hide();}});
+	$(".fhdb").click(function(){
+		$('html,body').animate({scrollTop: '0px'}, 800);
+	})
+	<!--页眉-->
+	$(".dl").hover(function(){
+		$(".dl").css("color","#fc8589");
+		},function(){
+			$(".dl").css("color","#b2b2b2");})
+	$(".zc").hover(function(){
+		$(".zc").css("color","#fc8589");
+		},function(){
+			$(".zc").css("color","#b2b2b2");})
+	<!--关注本站-->
+	$(".bz").hover(function(){
+		$(".xl").addClass("xlc");
+		$(".gz").css("color","#fc8589");
+		$(".gzxl").show();
+		},function(){
+			$(".xl").removeClass("xlc");
+			$(".gz").css("color","#b2b2b2");
+			$(".gzxl").hide();
+			})
+	$(".wxx").hover(function(){
+		$(".wxx").addClass("wc");
+		$(".wxwz").css("color","#fc8589");
+		$(".wx").addClass("wxc")
+		},function(){
+			$(".wxx").removeClass("wc");
+			$(".wxwz").css("color","#b2b2b2");
+			$(".wx").removeClass("wxc")})
+	$(".wbx").hover(function(){
+		$(".wbx").addClass("wc");
+		$(".wbwz").css("color","#fc8589");
+		$(".wb").addClass("wbc")
+		},function(){
+			$(".wbx").removeClass("wc");
+			$(".wbwz").css("color","#b2b2b2");
+			$(".wb").removeClass("wbc")})
+	$(".ewmp").hide();
+	$(".bm").hide();
+	$(".wxx").click(function(){
+		$(".bm").fadeIn(200);
+		$(".ewmp").fadeIn(400);
+		})
+	$(".bm").click(function(){
+		$(".bm").fadeOut(400);
+		$(".ewmp").fadeOut(200);
+		})
+	<!--导航效果-->
+	$(".ssg").hide();		
+	$(".ssk").hide();
+	$(".jsjhxl").hide();
+	$(".jrxlxl").hide();
+	$(".zy").hover(function(){
+		$(".zy a").css("color","#fc8589");
+		},function(){
+			$(".zy a").css("color","#000")})
+	$(".jsjh").hover(function(){
+		$(".jsjhxl").stop().slideDown(200);
+		},function(){
+			$(".jsjhxl").stop().slideUp(200)})
+	$(".jsjhxl li").hover(function(){
+		$(this).css("background","#eee");
+		$(this).children().css("color","#fc8589");
+		},function(){
+			$(this).css("background","#fff");
+			$(this).children().css("color","#000");
+			$(".xx1 a").css("color","#fc8589")})
+	$(".jrxl").hover(function(){
+		$(".acc").css("color","#fc8589");
+		$(".jrxlxl").stop().slideDown(200);
+		},function(){
+			$(".acc").css("color","#000000");
+			$(".jrxlxl").stop().slideUp(200);})
+	$(".jrxlxl li").hover(function(){
+		$(this).css("background","#eee");
+		$(this).children().css("color","#fc8589")
+		},function(){
+			$(this).css("background","#fff");
+			$(this).children().css("color","#000");})
+	$(".jsjq").hover(function(){
+		$(".jsjq a").css("color","#fc8589");
+		},function(){
+			$(".jsjq a").css("color","#000000");})
+	<!--搜索效果-->
+	$(".ss").hover(function(){
+		$(".ss").addClass("ssc");
+		},function(){
+			$(".ss").removeClass("ssc");})
+	$(".ss").click(function(){
+		$(".ss").hide();
+		$(".ssg").show();
+		$(".ssk").slideDown(300);})
+	$(".ssg").click(function(){
+		$(".ssg").hide();
+		$(".ss").show();
+		$(".ssk").slideUp(300);})		
+	$(".ssnr").focus(function(){
+		$(".ssnr").attr("value","");
+		})
+	$(".ssnr").blur(function(){
+		$(".ssnr").attr("value","   输入关键词");
+		})
+	<!--登录注册页面效果-->
+	$(".zcxx .qhdl").click(function(){
+		$(".zcxx").hide();
+		$(".dlxx").show();
+		})
+	$(".dlxx .qhzc").click(function(){
+		$(".dlxx").hide();
+		$(".zcxx").show();
+		})
+	$(".dlnr .yhmsr").focus(function(){
+		$(".dlnr .yhmsr").attr("value","")
+		})
+	$(".dlnr .yhmsr").blur(function(){
+		$(".dlnr .yhmsr").attr("value","  用户名或邮箱")
+		})
+	$(".dlnr .mmsr").focus(function(){
+		$(".dlnr .mmsr").attr("value","")
+		})
+	$(".dlnr .mmsr").blur(function(){
+		$(".dlnr .mmsr").attr("value","  登录密码")
+		})
+	$(".zcnr .ncsr").focus(function(){
+		$(".zcnr .ncsr").attr("value","")
+		})
+	$(".zcnr .ncsr").blur(function(){
+		$(".zcnr .ncsr").attr("value","  设置昵称")
+		})
+	$(".zcnr .yxsr").focus(function(){
+		$(".zcnr .yxsr").attr("value","")
+		})
+	$(".zcnr .yxsr").blur(function(){
+		$(".zcnr .yxsr").attr("value","  邮箱")
+		})
+	$(".hm").click(function(){
+		$(".hm").fadeOut(400);
+		$(".dzjm").fadeOut(200);
+		})
+	$(".gb").hover(function(){
+		$(".gb").css("background","#fc979b");
+		},function(){
+			$(".gb").css("background","#fc8589");})
+	$(".gb").click(function(){
+		$(".hm").fadeOut(400);
+		$(".dzjm").fadeOut(200);
+		})
+	<!--登录注册出现-->
+	$(".dlxx").hide();
+	$(".zcxx").hide();
+	$(".hm").hide();
+	$(".dzjm").hide();
+	$(".dl").click(function(){
+		$(".hm").fadeIn(200);
+		$(".dzjm").fadeIn(400);
+		$(".dlxx").show();
+		$(".zcxx").hide();
+		})
+	$(".zc").click(function(){
+		$(".hm").fadeIn(200);
+		$(".dzjm").fadeIn(400);
+		$(".zcxx").show();
+		$(".dlxx").hide();
+		})
+	<!--热门内容鼠标进入效果-->
+	$(".zxnr1").hover(function(){
+		$(".zxnr1").css("background","#fafafa");
+		},function(){
+			$(".zxnr1").css("background","#fff")})
+	$(".zxnr1dbt").hover(function(){
+		$(".zxnr1dbt").css("color","#fc8589");
+		},function(){
+			$(".zxnr1dbt").css("color","#4c4c4c")})
+	$(".zxnr2").hover(function(){
+		$(this).css("background","#fafafa");
+		},function(){
+			$(this).css("background","#fff")})
+	$(".zxnr2dbt").hover(function(){
+		$(this).css("color","#fc8589");
+		},function(){
+			$(this).css("color","#4c4c4c")})
+	$(".plwz").hover(function(){
+		$(this).css("color","#fc8589");
+		},function(){
+			$(this).css("color","#b2b2b2")})
+	<!--公告进入效果-->
+	$(".gg a").hover(function(){
+		$(this).css("color","#fc8589");
+		},function(){
+			$(this).css("color","#4c4c4c")})
+	<!--热门文章进入效果-->
+	$(".rmwz1").hover(function(){
+		$(this).css("background","#fafafa");
+		$(".rmwz1 .wzbt").css("color","#fc8589");
+		},function(){
+			$(this).css("background","#fff");
+			$(".rmwz1 .wzbt").css("color","#666666")})
+	$(".rmwz2").hover(function(){
+		$(this).css("background","#fafafa");
+		$(".rmwz2 .wzbt").css("color","#fc8589");
+		},function(){
+			$(this).css("background","#fff");
+			$(".rmwz2 .wzbt").css("color","#666666")})
+	$(".rmwz3").hover(function(){
+		$(this).css("background","#fafafa");
+		$(".rmwz3 .wzbt").css("color","#fc8589");
+		},function(){
+			$(this).css("background","#fff");
+			$(".rmwz3 .wzbt").css("color","#666666")})
+	$(".rmwz4").hover(function(){
+		$(this).css("background","#fafafa");
+		$(".rmwz4 .wzbt").css("color","#fc8589");
+		},function(){
+			$(this).css("background","#fff");
+			$(".rmwz4 .wzbt").css("color","#666666")})		
+	$(".rmwz5").hover(function(){
+		$(this).css("background","#fafafa");
+		$(".rmwz5 .wzbt").css("color","#fc8589");
+		},function(){
+			$(this).css("background","#fff");
+			$(".rmwz5 .wzbt").css("color","#666666")})		
+	<!--标签鼠标进入效果-->
+	$(".bqnr div").hover(function(){
+		$(this).css("background","#fc8589");
+		$(this).css("color","#fff");
+		},function(){
+			$(this).css("background","#f0f0f0");
+			$(this).css("color","#999999");})		
+	<!--公告与会员切换-->
+	$(".ggxx").mouseenter(function(){
+		$(".hy").animate({left:"100%"},100);
+		$(".gg").animate({left:"16px"},100);
+		$(this).css("background","#fff");
+		$(this).css("border-bottom","none");
+		$(this).css("height","36px");
+		$(".hyxx").css("background","none");
+		$(".hyxx").css("height","35px");
+		$(".hyxx").css("border-bottom","1px solid #dfdfdf");})
+	$(".hyxx").mouseenter(function(){
+		$(".gg").animate({left:"100%"},100);
+		$(".hy").animate({left:"0px"},100);
+		$(this).css("background","#fff");
+		$(this).css("border-bottom","none");
+		$(this).css("height","36px");
+		$(".ggxx").css("background","none");
+		$(".ggxx").css("height","35px");
+		$(".ggxx").css("border-bottom","1px solid #dfdfdf");})
+	$(".dd").click(function(){
+		$(".hm").fadeIn(200);
+		$(".dzjm").fadeIn(400);
+		$(".dlxx").show();
+		$(".zcxx").hide();
+		})
+	$(".zz").click(function(){
+		$(".hm").fadeIn(200);
+		$(".dzjm").fadeIn(400);
+		$(".zcxx").show();
+		$(".dlxx").hide();
+		})
+	<!--手机显示的搜索-->
+	$(".ssphone").hide();
+	$(".sspg").hide();	
+	$(".ssp").hover(function(){
+		$(".ssp").addClass("sspc");
+		},function(){
+			$(".ssp").removeClass("sspc");})
+	$(".ssp").click(function(){
+		$(".ssp").hide();
+		$(".sspg").show();
+		$(".ssphone").slideDown(300);})
+	$(".sspg").click(function(){
+		$(".sspg").hide();
+		$(".ssp").show();
+		$(".ssphone").slideUp(300);})		
+	$(".sspnr").focus(function(){
+		$(".sspnr").attr("value","");
+		})
+	$(".sspnr").blur(function(){
+		$(".sspnr").attr("value","   输入关键词");
+		})
+	<!--菜单-->
+	$(".hei").hide();
+	$(".caidan").click(function(){
+		$(".hei").fadeIn(200);
+		$(".caidanxx").animate({left:0},400);})	
+	$(".hei").click(function(){
+		$(".hei").fadeOut(400);
+		$(".caidanxx").animate({left:"-100%"},200);
+		$(body).removeClass("yc")})
+	<!--搜索效果切换-->
+	var q=$(window).width();
+	var p=$(window).width();
+	if(q>"700"){
+		$(".caidanxx").hide();}
+	function tz(){
+		if(q!=$(window).width()){
+			p=$(window).width();
+			if(q<="700" && p>"700"){
+				$(".caidanxx").hide();
+				if($(".ssphone").is(":hidden")){
+					$(".hui").show();
+					$(".ssk").hide();
+					$(".ssg").hide();
+					$(".ss").show();}
+					else{$(".hui").show();
+						 $(".ssk").show();
+						 $(".ss").hide();
+						 $(".ssg").show();
+						 $(".ssphone").hide();}}
+			if(q>"700" && p<="700"){
+				$(".caidanxx").show();
+				if($(".ssk").is(":hidden")){
+					$(".hui").hide();
+					$(".ssphone").hide();
+					$(".sspg").hide();
+					$(".ssp").show();}
+					else{$(".hui").hide();
+						 $(".ssphone").show();
+						 $(".ssp").hide();
+						 $(".sspg").show();}}
+			q=$(window).width();
+		}}
+	var qhhs=setInterval(tz,20)	
+	
+	})
+</script>
+</head>
+
+<body>
+	<img src="images/fhdb.png" class="fhdb">
+	<div class="hm"></div>
+    <div class="dzjm">
+        <div class="dlzx">
+            <div class="dlxx">
+            	<div class="tb">
+                	<div class="dc">登录</div>
+                    <div class="qhzc">切换注册</div>
+                </div>
+                <div class="dlnr">
+                	<div class="yhm">用户名或邮箱</div>
+                    <input class="yhmsr" value="&nbsp;&nbsp;用户名或邮箱">
+                    <div class="mm">密码</div>
+                    <input class="mmsr" value="&nbsp;&nbsp;登录密码">
+                    <div class="cc">
+                        <div class="jzw">
+                            <input type="checkbox" class="jzwxs">
+                            <div class="jzwwz">记住我</div>
+                        </div>
+                        <div class="dlan">登录</div>
+                    </div>
+                    <a class="wjmm">忘记密码？</a>
+                </div>
+            </div>
+            <div class="zcxx">
+            	<div class="tb">
+                	<div class="zcc">注册</div>
+                    <div class="qhdl">切换登录</div>
+                </div>
+                <div class="zcnr">
+                	<div class="nc">昵称</div>
+                    <input class="ncsr" value="&nbsp;&nbsp;设置昵称">
+                    <div class="yx">邮箱</div>
+                    <input class="yxsr" value="&nbsp;&nbsp;邮箱">
+                    <div class="kszc">快速注册</div>
+                </div>
+            </div>	
+        </div>
+        <div class="gb">
+            <img class="gba" src="images/gb.png">
+        </div>
+    </div>
+    <div class="bm"></div>
+    <div class="ewmp">
+    	<img src="images/ewm.png" class="ewm">
+        <div class="ewmwz">扫我加关注</div>
+    </div>
+	<!--yemei-->
+    <div class="yemei">
+    	<div class="yenei">
+        	<div class="deng">
+            	<div class="dl">Hi,请登录</div>
+                <div class="zc">我要注册</div>
+                <div class="bz">
+                    <div class="xl"></div>
+                    <div class="gz">关注本站</div>
+                    <ul class="gzxl">
+                        <li class="wxx">
+                            <div class="wx"></div>
+                            <div class="wxwz">微信</div>	
+                        </li>
+                        <li class="wbx">
+                        	<div class="wb"></div>
+                            <div class="wbwz">微博</div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="wz">
+            	<a class="logo" href="index.html"></a>
+                <ul class="cd">
+                	<li class="zy"><a href="index.html">主页</a></li>
+                    <li class="jsjh">
+                    	<a class="abc" href="">健身计划</a>
+                        <ul class="jsjhxl">
+                        	<li class="xx1"><a href="jsfjsjh.html">&nbsp;&nbsp;健身房健身计划</a></li>
+                            <li><a href="jfjsjh.html">&nbsp;&nbsp;减肥健身计划</a></li>
+                            <li><a href="zjjsjh.html">&nbsp;&nbsp;增肌减肥计划</a></li>
+                            <li><a href="jtjsjh.html">&nbsp;&nbsp;家庭健身计划</a></li>
+                        </ul>
+                    </li>
+                    <li class="jrxl">
+                    	<a class="acc" href="">肌肉训练</a>
+                        <ul class="jrxlxl">
+                        	<li class="xl1"><a href="sbjrxl.html">&nbsp;&nbsp;手臂训练</a></li>
+                            <li><a href="">&nbsp;&nbsp;肩部训练</a></li>
+                            <li><a href="">&nbsp;&nbsp;背部训练</a></li>
+                            <li><a href="">&nbsp;&nbsp;胸部训练</a></li>
+                            <li><a href="">&nbsp;&nbsp;腰腹部训练</a></li>
+                            <li><a href="">&nbsp;&nbsp;腿部训练</a></li>
+                        </ul>
+                    </li>
+                    <li class="jsjq"><a href="">健身技巧</a></li>
+                    <li class="ss"></li>
+                    <li class="ssg"></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="hui">
+    	<div class="ssk">
+        	<div class="ssl">	
+                <input class="ssnr" value="&nbsp;&nbsp;&nbsp;输入关键词">
+                <div class="ssan">
+                	<img src="images/ssbai.png">
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--yemeiphone-->
+    <div class="ymzw"></div>
+    <div class="yemeiphone">
+    	<div class="ymmm">
+            <div class="caidan"></div>
+            <a class="lg" href="index.html"></a>
+            <div class="ssp"></div>
+            <div class="sspg"></div>
+        </div>
+    </div>
+    <div class="ht"></div>
+    <div class="ssphone">
+    	<div class="sss">
+        	<input class="sspnr" value="&nbsp;&nbsp;&nbsp;输入关键词">
+            <div class="sspan">
+            	<img src="images/ssphonebai.png">
+            </div>
+        </div>
+    </div>
+    <div class="hei"></div>
+    <div class="caidanxx">
+    	<div class="caidannr">
+            <div><a href="index.html">主页</a></div>
+            <span class="chang"></span>
+            <dl>
+                <dt><a href="">健身计划</a></dt>
+                <span class="chang"></span>
+                <dd><a href="jsfjsjh.html">健身房健身计划</a></dd>
+                <span></span>
+                <dd><a href="jfjsjh.html">减肥健身计划</a></dd>
+                <span></span>
+                <dd><a href="zjjsjh.html">增肌健身计划</a></dd>
+                <span></span>
+                <dd><a href="jtjsjh.html">家庭健身计划</a></dd>
+                <span></span>
+            </dl>
+            <dl>
+                <dt><a href="">肌肉训练</a></dt>
+                <span class="chang"></span>
+                <dd><a href="sbjrxl.html">手臂训练</a></dd>
+                <span></span>
+                <dd><a href="">肩部训练</a></dd>
+                <span></span>
+                <dd><a href="">背部训练</a></dd>
+                <span></span>
+                <dd><a href="">胸部训练</a></dd>
+                <span></span>
+                <dd><a href="">腰腹部训练</a></dd>
+                <span></span>
+                <dd><a href="">腿部训练</a></dd>
+                <span></span>
+            </dl>
+            <div><a href="">肌肉训练</a></div>
+            <span class="chang"></span>
+        </div>
+    </div>
+    <div class="nr">
+        <!--左侧内容-->
+        <div class="zxnr">
+        	<p class="zxfb">健身房健身计划</p>
+            <!--内容1-->
+            <div class="zxnr1">
+            	<div class="zxnr1hz">
+                    <div class="zxnr1t"></div>
+                    <div class="zxnr1wz">
+                    	<div class="zxnr1bt">
+                            <a href="" class="zxnr1dbt">健身教练-零基础健身房健身计划</a>
+                        </div>
+                        <ul class="zxnr1xb">
+                        	<li>
+                            	<div class="sjt"></div>
+                                <div class="sjwz">2016-10-31</div>
+                            </li>
+                            <li>
+                            	<div class="zzt"></div>
+                                <div class="zzwz">教练-小刘</div>
+                            </li>
+                            <li>
+                            	<div class="ydt"></div>
+                                <div class="ydwz">阅读(222)</div>
+                            </li>
+                            <li>
+                            	<div class="plt"></div>
+                                <a href="" class="plwz">评论(22)</a>
+                            </li>
+                        </ul>
+                        <div class="zxnr1nr">相信有很多朋友看到文章的时候还没有正式健身，对于第一次进健身房的你， 完全就是一个大写的懵逼~ 应该先练什么？怎样练呢？都是你所想到的首要问题吧~ 文字解说： 首先，你需要明确你的健身训练的目的： 一、减肥健身 小编相信很多人都是这个目的吧...</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--右侧内容-->
+        <div class="rmnr">
+        	<!--公告-->
+        	<div class="hygg">
+            	<div class="xx">
+                    <div class="ggxx">网站公告</div>
+                    <div class="hyxx">会员中心</div>
+                </div>
+                <div class="hhh"></div>
+                <div class="ggnr">
+                	<div class="gg">
+                    	<ul>
+                        	<li>
+                            	<a href="">运动减肥很累？五招教你轻松健身</a>
+                                <p>10-30</p>
+                            </li>
+                            <li>
+                            	<a href="">不想跑步不一定是因为懒惰，也要小心</a>
+                                <p>10-30</p>
+                            </li>
+                            <li>
+                            	<a href="">何为适量运动？从一下四点判断</a>
+                                <p>10-30</p>
+                            </li>
+                            <li>
+                            	<a href="">健身到底是有氧先还是无氧先呢？</a>
+                                <p>10-30</p>
+                            </li>
+                            <li>
+                            	<a>你长这么大没听过的跑步公告</a>
+                                <p>10-30</p>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="hy">
+                    	<p class="xydl">需要登录才能进入会员中心</p>
+                        <div class="dlzc">
+                        	<a class="dd">现在登录</a>
+                            <a class="zz">马上注册</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--健身建议-->
+            <div class="mzjy">
+            	<div class="jybt">每周健身建议</div>
+                <div class="jyh"></div>
+                <span class="jynr">生命在于运动，饮食成就体型！	<br>
+科学膳食和足够强度、时间的运动健身，<br>
+是成就好身材的两翼，缺一不可！<br>
+以上内容虽然看似简单，<br>
+但关键在于你能否坚持、<br>
+能在多大程度上坚持。<br>
+别再抱怨“减肥无效”了！</span>
+            </div>
+            <!--热门文章-->
+            <div class="rmwz">
+            	<div class="rmbt">热门文章</div>
+                <div class="rmh"></div>
+                <ul class="rmwznr">
+                	<li class="rmwz1">
+                    	<a href="">
+                        	<span class="wzbt">健康饮食贴士：减脂期的我应该怎么吃</span>
+                            <span class="sjpl">2016-10-29&nbsp;&nbsp;评论(22)</span>
+                        </a>
+                    </li>
+                    <li class="rmwz2">
+                    	<a href="">
+                        	<span class="wzbt">健身到底是有氧先还是无氧先呢？</span>
+                            <span class="sjpl">2016-10-30&nbsp;&nbsp;评论(22)</span>
+                        </a>
+                    </li>
+                    <li class="rmwz3">
+                    	<a href="">
+                        	<span class="wzbt">小臂肌肉如何练习（教程）</span>
+                            <span class="sjpl">2016-10-29&nbsp;&nbsp;评论(22)</span>
+                        </a>
+                    </li>
+                    <li class="rmwz4">
+                    	<a href="">
+                        	<span class="wzbt">什么运动能使大腿的赘肉迅速减少</span>
+                            <span class="sjpl">2016-09-09&nbsp;&nbsp;评论(33)</span>
+                        </a>
+                    </li>
+                    <li class="rmwz5">
+                    	<a href="">
+                        	<span class="wzbt">如何把自己的身体调节到最佳状态</span>
+                            <span class="sjpl">2016-08-09&nbsp;&nbsp;评论(33)</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <!--热门标签-->
+            <div class="rmbq">
+            	<div class="bqbt">热门标签</div>
+                <div class="bqh"></div>
+                <div class="bqnr">
+                	<div class="bq1">减肥(8)</div>
+                    <div class="bq2">新手健身(7)</div>
+                    <div class="bq3">减脂食谱(6)</div>
+                    <div class="bq4">适量运动(7)</div>
+                    <div class="bq5">器械健身(4)</div>
+                    <div class="bq6">健身房(5)</div>
+                    <div class="bq7">马甲线(7)</div>
+                    <div class="bq8">腹肌(4)</div>
+                    <div class="bq9">居家健身(6)</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="banquan">Copyright © 2007-2016 JSJL. 保留所有权利</div>
+</body>
+</html>

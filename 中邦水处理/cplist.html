@@ -1,0 +1,186 @@
+<!doctype html>
+<html lang="zh-cn">
+	<head>
+		<meta charset="UTF-8">  <!--页面编码-->
+		<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">  <!--IE渲染 如果IE8以下模拟高速浏览器渲染  chrome=1开启谷歌浏览器高速渲染-->
+		<meta name="renderer" content="Webkit">  <!--高速模式-->
+		<title></title>
+		<!--自定义样式文件-->
+		<link rel="stylesheet" href="css/public.css">
+		<!--自定义样式文件-->
+		<link rel="stylesheet" href="css/cplist.css">
+		<!--Jquery脚本文件-->
+		<script src="script/jquery-3.1.0.min.js"></script>
+		<!--自定义js文件-->
+		<script src="script/index.js"></script>
+	</head>
+
+	<body>
+		<!--导航-->
+		<header>
+			<div id="hbox">
+				<img src="images/logo.png" id="logo">
+				<div id="lgwz">
+					<div>青岛中邦 ——</div>
+					<div>专业水处理交钥匙工程解决方案提供商</div>
+					<div>十年环保行业服务经验 您身边的水处理专家</div>
+				</div>
+				<img src="images/nav.png" id="mnav">
+			</div>
+		</header>
+		<div id="bannerbox">
+			<ul id="banner">
+				<li style="background-image: url(images/banner0.png);"></li>
+				<li style="background-image: url(images/banner1.png);"></li>
+				<li style="background-image: url(images/banner2.png);"></li>
+			</ul>
+			<ul id="bannerbz">
+				<li class="ac"></li>
+				<li></li>
+				<li></li>
+			</ul>
+		</div>
+		<div id="dl">
+			<div>
+				<ul id="cddd">
+					<li class="xz">纯水系统</li>
+					<li>净化过滤系统</li>
+					<li>杀菌消毒系统</li>
+					<li>污水处理系统</li>
+				</ul>
+			</div>
+		</div>
+		<div id="cplb">
+			<ul id="xl">
+				<li>反渗透系统</li>
+				<li class="xz">EDI纯水系统</li>
+				<li>医药净化水设备</li>
+				<li>电子超纯水设备</li>
+				<li>直饮水/小区设备</li>
+			</ul>
+			<ul id="cp">
+				<li>
+					<div class="bk">
+						<div style="background-image: url(images/cp0.png);"></div>
+					</div>
+					<div class="cpmc">医药纯水设备</div>
+				</li>
+				<li>
+					<div class="bk">
+						<div style="background-image: url(images/cp0.png);"></div>
+					</div>
+					<div class="cpmc">医药纯水设备</div>
+				</li>
+				<li>
+					<div class="bk">
+						<div style="background-image: url(images/cp0.png);"></div>
+					</div>
+					<div class="cpmc">医药纯水设备</div>
+				</li>
+				<li>
+					<div class="bk">
+						<div style="background-image: url(images/cp0.png);"></div>
+					</div>
+					<div class="cpmc">医药纯水设备</div>
+				</li>
+			</ul>
+		</div>
+		<script type="text/javascript">
+			$(function(){
+				var ysx=0;
+				document.getElementById("cddd").addEventListener("touchstart", function(e){
+				    ysx = e.touches[0].pageX;
+				}, false);
+				document.getElementById("cddd").addEventListener("touchmove", function(e){
+				    xzx = e.changedTouches[0].pageX;
+				    mgl = parseInt($("#cddd").css("marginLeft"));
+				    www = $("#cddd").width();
+				    if(xzx-ysx>30||xzx-ysx<30){
+				    	if(mgl<=0&&mgl>=(710-www)){
+				    		$("#cddd").css("marginLeft",mgl+xzx-ysx);
+				    		mgl = parseInt($("#cddd").css("marginLeft"));
+				    		if(mgl<=(710-www)){
+				    			$("#cddd").css("marginLeft",710-www);
+				    		}
+				    		if(mgl>=0){
+				    			$("#cddd").css("marginLeft",0);
+				    		}
+				    	}
+				    }
+				}, false);
+			})
+		</script>
+		<!--页脚-->
+		<footer>
+			<div id="fnr">
+				<div>全国统一服务热线：</div>
+				<div>0532-87972199/0532-87972799</div>
+				<div>地址：青岛市城阳区夏庄街道中黄埠北工业园</div>
+				<div>Copyright©2014 版权所有：中邦环境技术有限公司</div>
+				<div>鲁ICP备16009973号-1</div>
+				<div>
+					<img src="images/bq0.png">
+					<img src="images/bq1.png">
+					<img src="images/bq2.png">
+					<img src="images/bq3.png">
+				</div>
+			</div>
+		</footer>
+		<ul id="xf">
+			<li>TOP</li>
+			<li></li>
+			<li></li>
+		</ul>
+		<ul id="dh">
+			<li>
+				<a>
+					<div>首页</div>
+					<img src="images/jt.png">
+				</a>
+			</li>
+			<li>
+				<a>
+					<div>关于中邦</div>
+					<img src="images/jt.png">
+				</a>
+			</li>
+			<li>
+				<a>
+					<div>新闻资讯</div>
+					<img src="images/jt.png">
+				</a>
+			</li>
+			<li>
+				<a>
+					<div>产品展示</div>
+					<img src="images/jt.png">
+				</a>
+			</li>
+			<li>
+				<a>
+					<div>案例展示</div>
+					<img src="images/jt.png">
+				</a>
+			</li>
+			<li>
+				<a>
+					<div>技术支持</div>
+					<img src="images/jt.png">
+				</a>
+			</li>
+			<li>
+				<a>
+					<div>人才招聘</div>
+					<img src="images/jt.png">
+				</a>
+			</li>
+			<li>
+				<a>
+					<div>联系我们</div>
+					<img src="images/jt.png">
+				</a>
+			</li>
+		</ul>
+		<div id="hei"></div>
+	</body>
+</html>

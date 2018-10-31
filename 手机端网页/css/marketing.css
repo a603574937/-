@@ -1,0 +1,47 @@
+@charset "utf-8";
+/* CSS Document */
+body{background-color: #252934;}
+nav{height: 0.36rem;line-height: 0.36rem;font-size: 0.36rem;margin-top: 0.64rem;position: relative;text-align: center;color: #fff;padding-bottom: 0.3rem;}
+nav .fh{position: absolute;top: 0;left: 0.24rem;height: 0.36rem;}
+nav .xia{width: 0.22rem;;position: absolute;left: 4.76rem;top: 0.12rem;}
+nav .xing{width: 0.44rem;position: absolute;right: 0.24rem;}
+
+.gzxx{padding: 0.3rem 0;height: 1.14rem;background-color: #1e212a;}
+.gzxx .xx{float: left;width: 4.8rem;height: 1.14rem;border-right: 0.02rem solid #252934;padding-left: 0.24rem;}
+.gzxx .xx .jg{font-size: 0.36rem;}
+.gzxx .xx .jg span{font-size: 0.24rem;color: #999;opacity: 0.5;}
+.gzxx .xx .fd{font-size: 0.26rem;line-height: 0.28rem;margin-top: 0.04rem;}
+.gzxx .xx .fd span{margin-left: 0.2rem;}
+.gzxx .xx .cjl{font-size: 0.26rem;color: #fff;line-height: 0.32rem;}
+.gzxx .xx .lv{color: #2ea300;}
+.gzxx .gd{float: left;width: 2.44rem;height: 1.14rem;}
+.gzxx .gd div{font-size: 0.22rem;color: #999;text-indent: 0.2rem;}
+.gzxx .gd div:nth-child(1){margin-top: 0.22rem;}
+.gzxx .gd div span{margin-left: 0.2rem;}
+
+.bd{margin-top: 0.2rem;height: 0.68rem;border-bottom: 0.02rem solid rgba(255,255,255,0.1);background-color: #1e212a;}
+.bd li{float: left;width: 50%;}
+.bd li div{margin: auto;width: 1.4rem;height: 0.46rem;line-height: 0.46rem;margin-top: 0.18rem;text-align: center;font-size: 0.26rem;color:#67686b;}
+.bd li.on div{border-bottom: 0.04rem solid #ffbe33;color: #ffbe33;}
+
+.tb{height: 5.9rem;background-color: #fff;}
+
+.jyxx{padding: 0 0.24rem 0.36rem;background-color: #252934;}
+.jylb{width: 100%;}
+.jylb tbody tr{height: 0.6rem;}
+.jylb tbody tr:nth-child(1){background-color: #22252f;height: 0.6rem;line-height: 0.6rem;}
+.jylb tbody tr th{color: #67686b;font-size: 0.22rem;text-align: left;}
+.jylb tbody tr th:nth-child(2){text-indent: 0.04rem;}
+.jylb tbody tr th span{float: right;display: block;width: 0.76rem;height: 0.4rem;line-height: 0.4rem;border: 0.02rem solid #292c35;border-radius: 0.1rem;text-align: center;margin-top: 0.1rem;}
+.jylb tbody tr td{text-align: left;font-size: 0.2rem;color: #fff;position: relative;}
+.jylb tbody tr td .mrj{color: #2ea300;float: right;margin-right: 0.04rem;}
+.jylb tbody tr td .mrjd{position: absolute;bottom: 0;right: 0.04rem;height: 0.04rem;border-radius: 0.02rem;background-color: #2ea300;}
+.jylb tbody tr td .mcj{color: #fe260f;margin-left: 0.04rem;}
+.jylb tbody tr td .mcjd{position: absolute;bottom: 0;left: 0.04rem;height: 0.04rem;border-radius: 0.02rem;background-color: #fe260f;}
+.jylb tbody tr td .sl{float: right;}
+
+.an{height: 0.98rem;background-color: #1e212a;}
+.an div{float: left;width:50%;height: 0.98rem;}
+.an .mran button,.an .mcan button{display: block;border: none;margin-top: 0.16rem;width: 2.4rem;height: 0.66rem;line-height: 0.66rem;border-radius: 0.1rem;margin-left: 0.66rem;border: none;color: #fff;background-color: #2ea300;font-size: 0.34rem;text-align: center;}
+.an .mcan button{background-color: #fe260f;}
+

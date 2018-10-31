@@ -1,0 +1,101 @@
+@charset "utf-8";
+/* CSS Document */
+body{background-color: #252934;padding-bottom: 0.98rem;padding-top: 1.98rem;}
+nav{background-color: #252934;z-index: 100;height: 0.36rem;width: 100%;line-height: 0.36rem;font-size: 0.36rem;padding-top: 0.64rem;text-align: center;color: #fff;padding-bottom: 0.3rem;position: fixed;top:0;left: 0;}
+nav .zxjy{position: absolute;top: 0.64rem;left: 0.24rem;height: 0.44rem;}
+nav .xia{width: 0.22rem;;position: absolute;left: 4.76rem;top: 0.76rem;}
+nav .lswt{position: absolute;right: 0.24rem;font-size: 0.3rem;color: rgba(153,153,153,0.5);top: 0.64rem;}
+
+.bd{z-index: 100;height: 0.68rem;width: 100%;border-bottom: 0.02rem solid rgba(255,255,255,0.1);background-color: #1e212a;position: fixed;top: 1.3rem;left: 0;}
+.bd li{float: left;width: 25%;}
+.bd .dqwt{width: 50%;}
+.bd li div{margin: auto;width: 1.4rem;height: 0.46rem;line-height: 0.46rem;margin-top: 0.18rem;text-align: center;font-size: 0.26rem;color:#67686b;}
+.bd li div .wttb{display: block;width: 0.22rem;height: 0.26rem;background-image:url("../images/b.png");background-size: cover;float: left;margin: 0.1rem 0 0 0.02rem;}
+.bd li.on div{border-bottom: 0.04rem solid #ffbe33;color: #ffbe33;}
+.bd li.on div .wttb{background-image: url("../images/bxz.png");}
+
+.xbt{height: 0.6rem;padding: 0 0.24rem;}
+.xbt>div{height: 0.6rem;line-height: 0.6rem;color: #fff;font-size: 0.24rem;float: left;width: 50%}
+.xbt .xjd div{float: left;}
+.xbt .jgsl div{height: 0.6rem;line-height: 0.6rem;color: rgba(153,153,153,0.5);font-size: 0.22rem;float: left;width: 50%}
+.xbt .jgsl div:nth-child(2){text-align: right;}
+.xbt .xjd img{float: left;width: 0.12rem;margin-left: 0.12rem;margin-top: 0.24rem;}
+
+.gzxx{padding: 0 0.24rem;background-color: #1e212a;height: 9.2rem;border-bottom: 0.02rem solid rgba(153,153,153,0.05);}
+.gzxx>div{width: 50%;padding-top: 	0.24rem;float: left;}
+.gzxx input{display: block;border: none;text-align: center;background-color: #252934;border-radius: 0.06rem;height: 0.6rem;width: 3.46rem;color: #fff;}
+.gzxx .gz{font-size: 0.24rem;color: rgba(153,153,153,0.5);height: 0.6rem;line-height: 0.6rem;}
+.gzxx .bl{margin-top: 0.08rem;height: 0.44rem;}
+.gzxx .bl input{float: left;width: 0.78rem;height: 0.44rem;margin-left: 0.11rem;color: rgba(153,153,153,0.5);}
+.gzxx .bl input:nth-child(1){margin-left: 0;}
+.gzxx .bl input.on{color: #fff;background-color: #ffbe33;}
+.gzxx .ze{margin-top: 0.08rem;}
+.gzxx .ky{height: 0.62rem;line-height: 0.62rem;width: 3.46rem;}
+.gzxx .ky div{float: left;font-size: 0.24rem;color: rgba(153,153,153,0.5);}
+.gzxx .ky .kyz{float: right;color: #fff;font-weight: bold;font-family: "SF-UI-Text-Regular";}
+.gzxx .mr{background-color: #2ea300;margin-top: 0.16rem;}
+.gzxx .jyqk{margin-top: 0.2rem;border: 0.02rem solid #292c35;height: 3.96rem;}
+.gzxx .jyqk .tp{height: 3.64rem;border-bottom: 0.02rem solid #292c35;}
+.gzxx .jyqk .qq div{width: 47%;color: rgba(153,153,153,0.5);font-size: 0.18rem;height: 0.3rem;line-height: 0.3rem;float: left;}
+.gzxx .jyqk .qq div:nth-child(1){text-align: right;padding-right: 0.1rem;}
+.gzxx .jyqk .qq div:nth-child(2){padding-left: 0.1rem;}
+.gzxx input::-webkit-input-placeholder{
+    color: rgba(153,153,153,0.5);
+    }
+.gzxx input:-moz-placeholder{
+    color: rgba(153,153,153,0.5);
+    }
+.gzxx input::-moz-placeholder{
+    color: rgba(153,153,153,0.5);
+    }
+.gzxx input:-ms-input-placeholder{
+    color: rgba(153,153,153,0.5);
+}
+
+.jynr .sell{height: 3.8rem;border-bottom: 0.02rem dashed #252934;overflow: hidden;}
+.jylb{width: 100%;}
+.jylb tbody tr{height: 0.6rem;}
+.jylb tbody tr td{text-align: left;font-size: 0.2rem;color: #fff;position: relative;}
+.jylb tbody tr td .mrj{color: #2ea300;margin-left: 0.1rem;}
+.jylb tbody tr td .mrjd{position: absolute;bottom: 0;right: 0.04rem;height: 0.04rem;border-radius: 0.02rem;background-color: #2ea300;}
+.jylb tbody tr td .mcj{color: #fe260f;margin-left: 0.1rem;}
+.jylb tbody tr td .mcjd{position: absolute;bottom: 0;right: 0.04rem;height: 0.04rem;border-radius: 0.02rem;background-color: #fe260f;}
+.jylb tbody tr td .sl{float: right;}
+.rmb{height: 0.56rem;line-height: 0.56rem;color: #fe260f;font-size: 0.3rem;text-indent: 0.1rem;border-bottom: 0.02rem dashed #252934;}
+.rmb font{font-size: 0.24rem;}
+.jynr .buy{height: 3.76rem;overflow: hidden;}
+.jynr .xxk{height: 0.44;padding-left: 0.1rem;}
+.jynr .xxk>div{width: 1.65rem;height: 0.44rem;border-radius: 0.04rem;font-size: 0.22rem;color: #999;background-color: #252934;text-align: center;float: left;}
+.jynr .xxk .ms{margin-left: 0.1rem;}
+.jynr .xxk .ws div,.jynr .xxk .ms div{float: left;line-height: 0.44rem;margin-left: 0.32rem;}
+.jynr .xxk .ws img,.jynr .xxk .ms img{float: left;width: 0.12rem;margin-top: 0.18rem;margin-left: 0.08rem;}
+.jynr .xxk .ms div{margin-left: 0.48rem;}
+
+
+.xjd{height: 0.6rem;}
+.xjd div{height: 0.6rem;line-height: 0.6rem;color: #fff;font-size: 0.24rem;margin-left: 0.24rem;float: left;}
+.xjd img{float: right;width: 0.22rem;margin-right: 0.24rem;margin-top: 0.2rem;}
+
+.wtlb{padding: 0 0.24rem;background-color: #1e212a;}
+.wtlb table{width: 100%;}
+.wtlb table tbody tr{height: 0.6rem;}
+.wtlb table tbody tr:nth-child(odd){background-color: #242730;}
+.wtlb table tbody tr:nth-child(1){height: 0.44rem;border-bottom: 0.02rem solid #292c35;background-color: #1e212a}
+.wtlb table tbody tr th{font-size: 0.2rem;color: rgba(153,153,153,0.5);}
+.wtlb table tbody tr td{font-size: 0.22rem;color: #fff;}
+.wtlb table tbody tr .sj{text-align: left;text-indent: 0.2rem;}
+.wtlb table tbody tr .jg{text-align: center;}
+.wtlb table tbody tr .sl{text-align: right;padding-right: 0.2rem}
+.wtlb table tbody tr .lv{color: #2ea300;}
+.wtlb table tbody tr .hong{color: #fe260f;}
+
+
+.bottom{position:fixed;height:0.98rem;width:100%;background:#1e212a;z-index:9999;bottom:0;left:0;overflow:hidden;}
+.bottom ul li{float:left;width:20%;text-align:center;line-height:1.0;}
+.bottom ul li a{display:block;width:100%;height:100%;overflow: hidden;}
+.bottom ul li img{display: block;height:0.48rem;margin-top: 0.12rem;margin-left: 0.5rem;}
+.bottom ul li .xz{display:none;}
+.bottom ul li div{font-size:0.2rem;color:#999;line-height: 0.36rem;}
+.bottom ul li.on .bz{display:none;}
+.bottom ul li.on .xz{display:block;}
+.bottom ul li.on div{color:#ffbe33;}

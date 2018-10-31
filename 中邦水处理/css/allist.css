@@ -1,0 +1,57 @@
+@charset "utf-8";
+/* CSS Document */
+
+
+
+/*案例列表*/
+#allb{
+	width: 710px;
+	overflow: hidden;
+	margin: 0 auto;
+	padding-bottom: 80px;
+}
+#allb h1{
+	font-size: 36px;
+	color: #333;
+	text-align: center;
+	font-weight: normal;
+	margin-top: 20px;
+	margin-bottom: 24px;
+}
+#allb li{
+	float: left;
+	width: 348px;
+	height: 318px;
+	margin-left: 14px;
+}
+#allb li:nth-child(odd){
+	margin-left: 0;
+}
+#allb li .bk{
+	width: 346px;
+	height: 250px;
+	border: 1px solid #dbdbdb;
+}
+#allb li .bk div{
+	width: 338px;
+	height: 244px;
+	margin: 3px auto 0;	
+}
+#allb li .albt{
+	margin-top: 16px;
+	font-size: 28px;
+}
+#allb .gd{
+	display: inline-block;
+	position: relative;
+	top:20px;
+	left: 50%;
+	margin-left: -100px;
+	width: 200px;
+	height: 54px;
+	text-align: center;
+	line-height: 54px;
+	font-size: 28px;
+	color: #999;
+	border: 1px solid #dbdbdb;
+}

@@ -1,0 +1,22 @@
+@charset "utf-8";
+/* CSS Document */
+
+
+
+/*公司简介*/
+#gsjj{
+	width: 710px;
+	padding-bottom: 30px;
+	margin: 0 auto;
+	overflow: hidden;
+}
+#jjbt{
+	font-size: 36px;
+	color: #333;
+	margin-top: 36px;
+}
+#gsjj p{
+	font-size: 24px;
+	color: #666;
+	margin-top: 20px;
+}
